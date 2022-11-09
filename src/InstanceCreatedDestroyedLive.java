@@ -4,6 +4,7 @@ public class InstanceCreatedDestroyedLive {
     static int construct_count=0;
     static int destruct_count=0;
     public InstanceCreatedDestroyedLive()
+
     {
         construct_count++;
     }
@@ -28,6 +29,7 @@ public class InstanceCreatedDestroyedLive {
 
     protected void finalize(){
         destruct_count++;
+
     }
 
 }
